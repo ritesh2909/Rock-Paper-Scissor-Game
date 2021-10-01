@@ -9,7 +9,7 @@ int generateRandomNumber(int n)
     return rand() % n;
 }
 
-int igreater(char char1, char char2)
+int igt(char char1, char char2)
 {
 //returns 1 if c1>c2 and 0 otherwise . If c1==c2 it will return -1
 
@@ -81,12 +81,12 @@ int main()
         cout<<"\nCPU Choose\t"<<compchar;
 
  
-        if (igreater(compchar, playerchar)==1)
+        if (igt(compchar, playerchar)==1)
         {
             compscore++;
             cout<<"\nCPU Got It !!\n";
         }
-        else if(igreater(compchar, playerchar)==-1)
+        else if(igt(compchar, playerchar)==-1)
         {
             compscore++;
             playerscore++;
